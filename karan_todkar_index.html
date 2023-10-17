@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cricbuzz</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+    /* Styles here */
+    body {
+      height: 100%;
+      background-color: #e3e6e3;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .container {
+      width: 980px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      height: 32px;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .nav {
+      height: 48px;
+      background-color: #009270;
+      display: flex;
+      align-items: center;
+    }
+
+    .navitem {
+      color: white;
+      display: flex;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    .featured-matches {
+      height: 140px;
+      background-color: white;
+      margin-top: 10px;
+      padding: 15px;
+      padding-left: 20px;
+    }
+
+    .featured-match-heading {
+      color: #009270;
+      font-weight: 700;
+    }
+
+    .match {
+      margin-top: 10px;
+      font-size: 12px;
+      border-right: 1px solid #7c7c7c;
+      padding: 10px;
+    }
+
+    .mt10 {
+      margin-top: 10px;
+    }
+
+    .match-country {
+      font-weight: 700;
+      margin-right: 20px;
+    }
+
+    .featured-matches-score {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .featured-match-sub {
+      font-size: 10px;
+      color: #d0021b;
+      margin-top: 10px;
+    }
+
+    .content {
+      margin-top: 10px;
+    }
+
+    .latest-news {
+      width: 196px;
+
+      background: white;
+    }
+
+    .lastest-news-heading {
+      padding: 10px;
+
+    }
+
+    .one-latest-news {
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .latest-news-duration {
+      font-size: 10px;
+      padding: 5px;
+      color: grey;
+      font-weight: 100;
+      border-bottom: 2px solid gray;
+    }
+
+    .content {
+      display: flex;
+    }
+.one-main-news{
+  border-bottom: 2px solid grey;
+}
+    .main-news {
+      width: 460px;
+      background: white;
+      margin: 0px 10px;
+    }
+
+    .news-tag {
+      FONT-WEIGHT: 500;
+      font-size: 12px;
+
+      padding: 20px 10px 0px 10px;
+    }
+
+    .news-image {
+      border-radius: 15px;
+      padding: 10px;
+      width: 440px;
+    }
+    .news-title{
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      padding: 0px 15px;
+    }
+    .news-desc{
+      padding: 0 15px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .news-links{
+      font-size: 15px;
+      line-height: 2;
+      padding: 0px 15px;
+    }
+    .news-links a{
+      text-decoration: none;
+      color: #1866DB;
+      font-weight: bold;
+      
+    }
+    .featured-news{
+      width: 324px;
+      background: white;
+    }
+   .latest-news-video
+   {
+     border: 2px solid #009270;
+   }
+   .featured-news-heading{
+    font-size: 18px;
+    font-weight: bold;
+   }
+   .t-worldcup-section{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: white;
+    margin-top: 10px;
+  }
+  .navbar-t-worldcup-heading{
+    padding-left: 15px ;
+    font-weight: bold
+  }
+  .navbar-t-worldcup{
+    
+    display: flex;
+    list-style: none;
+    padding: 5px;
+  }
+  .navbar-t-worldcup a{
+    padding: 15px;
+    text-decoration: none;
+   color: #1866DB;
+   font-size: 15px;
+  }
+  </style>
+ 
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <header>
+      <nav class="nav">
+        <img class="logo" src="https://www.cricbuzz.com/images/cb_logo.svg" />
+        <span class="navitem">Live Score</span>
+        <span class="navitem">Schedule</span>
+        <span class="navitem">Archives</span>
+        <span class="navitem">News<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Series<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Teams<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Videos<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Ranking<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">More<span class="material-icons"> arrow_drop_down </span>
+        </span>
+      </nav>
+      <!-- Dark MATCHES section here -->
+      <!-- <nav class="nav2">
+        <ul>
+          <li>MATCHES</li>
+          <li>HBHW VS </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav> -->
+    </header>
+
+    <!-- Featured Matches -->
+    <div class="featured-matches">
+      <div class="featured-match-heading">FEATURED MATCHES</div>
+      <div class="featured-matches-score">
+        <!-- MATCH -->
+        <div class="match">
+          <div><span class="match-country">ADSW</span><span>142-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">HBSW</span><span>3-0 (1.2)</span></div>
+          <div class="featured-match-sub">Hobart Hurricanes Women need 140 runs</div>
+        </div>
+        <div class="match">
+          <div><span class="match-country">Brisbane Heat Women</div>
+          <div class="mt10"><span class="match-country">Sydney Sixers Women</div>
+          <div class="featured-match-sub">Saturday, 13 Nov, 01:35 PM</div>
+        </div>
+        <div class="match">
+          <div><span class="match-country">PAK</span><span>176-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">AUS</span><span>175-5 (19)</span></div>
+          <div class="featured-match-sub">Australia Won by 5 Wkts</div>
+        </div>
+        <div class="match">
+          <div><span class="match-country">ENG</span><span>166-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">NZ</span><span>167-5 (1.2)</span></div>
+          <div class="featured-match-sub">New Zealand won by 5 wkts</div>
+        </div>
+
+
+      </div>
+    </div >
+    <!-- to do T20 section -->
+
+    <div class="t-worldcup-section">
+      <nav class="navbar-t-worldcup">
+        <div class="navbar-t-worldcup-heading">
+          T20 World Cup
+        </div>
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">Schedule</a> </li>
+        <li><a href="#">Points_Table</a> </li>
+        <li><a href="#">News</a> </li>
+        <li><a href="#">Video</a> </li>
+        <li><a href="#">Squads</a> </li>
+        <li><a href="#">Wicket_zone</a> </li>
+        <li><a href="#">Boundry_Tracker</a> </li>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="latest-news ">
+        <div class="featured-match-heading lastest-news-heading">
+          LATEST NEWS
+        </div>
+        <div class="one-latest-news">
+          Bangladesh to play two Tests in New Zealand in January 2022
+          <div class="latest-news-duration">15h ago         
+          </div>
+        </div>
+        <div class="one-latest-news">
+          Bangladesh to only play ODIs in Ireland
+          <div class="latest-news-duration">23h ago</div>
+        </div>
+        <div class="one-latest-news">
+          Rohit, Pant, Bumrah and Shami rested for New Zealand Tests
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          World Cup finalists to meet in three-game T20I series in March
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          Stoinis' power-hitting against Rauf the game-changer, says Wade
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          Conway ruled out of World Cup final, India T20Is
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          BCB not ready to disrupt domestic calendar for national cricketers
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          Vikram Rathour, Paras Mhambrey, T Dilip set to be India support staff
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          Rohit, Pant, Bumrah and Shami set to be rested for NZ Tests
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          To be on the wrong side of a close game is not easy to take: Morgan
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          To be on the wrong side of a close game is not easy to take: Morgan
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+        <div class="one-latest-news">
+          To be on the wrong side of a close game is not easy to take: Morgan
+          <div class="latest-news-duration">1d ago</div>
+        </div>
+       
+      </div>
+
+
+      <!-- One-news -->
+      <div class="main-news">
+        <div class="one-main-news">
+          <div class="news-tag">ICC T20 WORLD CUP, 2021</div>
+          <div>
+            <img class="news-image"
+              src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c218093/new-zealand-vs-australia-tact.jpg" alt="kane">
+          </div>
+          <div class="news-title">
+            New Zealand vs Australia: Tactical preview for the grand finale
+          </div>
+
+          <div class="news-desc">
+            A deep dive into what are the key head-to-head battles, the all important toss, match-ups and what other factors could prove vital
+          </div>
+
+         
+
+        </div>
+        <div class="one-main-news">
+          <div class="news-tag">T20 WORLD CUP 2021</div>
+          <div>
+            <img class="news-image"
+              src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c218084/matthew-wade-the-anti-heros.jpg" alt="wade">
+          </div>
+          <div class="news-title">
+            Matthew Wade, the anti-hero's hero
+          </div>
+
+          <div class="news-desc">
+            The semifinal against Pakistan was his much-deserved moment in the sun, after having spent some 12 months doing everything that was asked of him
+          </div>
+          <div class="news-links">
+            <a href="#"> End of World Cup, start of new road for Pakistan</a>
+          </div>
+          <div class="news-links">
+            <a href="#"> Warner, Wade, Stoinis take Australia to first T20 WC final since 2010</a>
+            
+          </div>
+          <div class="news-links">
+            <a href="#"> Stoinis' power-hitting against Rauf the gamechanger - Wade</a>
+            
+          </div>
+          
+         
+
+        </div>
+        <div class="one-main-news">
+          <div class="news-tag">NEW ZEALAND TOUR OF INDIA, 2021</div>
+          <div>
+            <img class="news-image"
+              src="https://www.cricbuzz.com/a/img/v1/420x235/i1/c218068/rohit-pant-bumrah-and-shami.jpg" alt="wade">
+          </div>
+          <div class="news-title">
+            Rohit, Pant, Bumrah and Shami rested for New Zealand Tests
+          </div>
+
+          <div class="news-desc">
+            Rahane will lead India in the first Test while Kohli will be back to captain the team in the second
+          </div>
+          <div class="news-links">
+            <a href="#"> Hanuma Vihari added to India A squad</a>
+          </div>
+          <div class="news-links">
+            <a href="#"> A studious rise: the making of Venkatesh Iyer</a>
+            
+          </div>
+          <div class="news-links">
+            <a href="#"> Harshal Patel: The long road to stardom</a>
+            
+          </div>
+          
+         
+
+        </div>
+      </div>
+
+      <div class="featured-news">
+        <div class="featured-match-heading lastest-news-heading">
+          FEATURED VIDEOS
+        </div>
+        <iframe class="latest-news-video" width="300px" height="315" src="https://www.youtube.com/embed/vXmNhSNDYmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="one-latest-news featured-news-heading">
+
+          Zaheer Khan & Ajay Jadeja review Pakistan's T20 World Cup campaign
+          <div class="latest-news-duration">15h ago         
+          </div>
+
+      </div>
+      <iframe width="300px" height="315" src="https://www.youtube.com/embed/hvVvb5JPunA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="one-latest-news featured-news-heading">
+
+          T20 World Cup: Australia Beat Inform Pakistan In Semi-Final | Breaking News
+          <div class="latest-news-duration">15h ago         
+          </div>
+
+      </div>
+      <iframe width="300" height="315" src="https://www.youtube.com/embed/PJutG613i7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="one-latest-news featured-news-heading">
+
+          Ball By Ball action of the Super Over between the BLACKCAPS and India during the 3rd T20 in Hamilton. 
+          <div class="latest-news-duration">15h ago         
+          </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+  
+
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
